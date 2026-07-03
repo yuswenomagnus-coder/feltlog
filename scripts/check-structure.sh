@@ -12,6 +12,7 @@ require() {
   fi
 }
 
+require "AGENTS.md"
 require "docs/AI_ENGINEERING_CONSTITUTION.md"
 require "docs/status/CURRENT_STATE.md"
 require "docs/templates"

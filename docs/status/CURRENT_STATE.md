@@ -1,6 +1,6 @@
 # Current State
 
-Commit: 3a68206
+Commit: <set to git rev-parse --short HEAD after committing AGENTS.md fix>
 Branch: master (rename to main on GitHub push)
 Environment: none yet — no product code exists
 
@@ -23,6 +23,9 @@ Blocked by: nothing
   → Evidence pointer: this file
 
 Open risks:
+  0. AGENTS.md binding shim added post-bootstrap (founder catch) —
+     Verifier must audit it in Stage 0 step 5b.
+     → Tracking: AGENTS.md, docs/status/CODEX-SESSION-1.md step 5b
   1. Constitution unratified — canonical only after founder signs
      DECISION-0001 and the constitution ratification block, and commits.
      → Tracking: docs/decisions/DECISION-0001-test-protocol.md

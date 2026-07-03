@@ -28,6 +28,9 @@ Perform Stage 0 verification per Constitution §5 Stage 0:
 5. Confirm .github/PULL_REQUEST_TEMPLATE.md matches Stage 6 requirements
    (task ID, tier, slice reference, CI Integrity Note section,
    falsifiability section, reserved-words-compliant producer statement).
+5b. Confirm AGENTS.md exists at repo root, that scripts/check-structure.sh
+   requires it, and that nothing in AGENTS.md contradicts the constitution
+   (if it does, that is a BLOCKER — the constitution wins).
 6. Attempt to falsify: actively look for a missing file, a status line
    without a pointer, or any claim in CURRENT_STATE.md that the repo
    does not support. Assume the bootstrap was written to look complete
