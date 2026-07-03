@@ -49,4 +49,4 @@
 ## Founder ratification
 
 Decision: PASS / PASS WITH ACCEPTED RISK / REJECT / NEEDS MORE EVIDENCE
-Signature: ____________  Date: ____________
+Signature: ____Baragji_______  Date: ____03/07/2026________
