@@ -1,7 +1,8 @@
 # AGENTS.md — Binding rules for ALL AI agents in this repository
 
-You are working in a repository governed by a ratified constitution.
-This file binds you the moment you read it. It is a pointer, not the law:
+You are working in a repository governed by `docs/AI_ENGINEERING_CONSTITUTION.md`;
+ratification status is proven only by that file's founder ratification block and
+`docs/status/CURRENT_STATE.md`. This file binds you the moment you read it. It is a pointer, not the law:
 
 **THE LAW IS: `docs/AI_ENGINEERING_CONSTITUTION.md` — read it IN FULL before any action. If this file and the constitution ever conflict, the constitution wins.**
 
