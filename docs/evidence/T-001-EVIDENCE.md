@@ -227,6 +227,7 @@ Not checked:
 
 - `npm audit --omit=dev` reports two moderate PostCSS findings through Next `16.2.10`; npm's proposed force fix would install `next@9.3.3`, a breaking downgrade outside the approved slice.
 - No hosted deployment ID exists yet.
+- Local filesystem persistence uses `fs/promises` to write `process.cwd()/data/day-log.json`; this will NOT survive hosted deployment unchanged because most hosting platforms expose read-only or ephemeral filesystems between requests/deploys. Before any T-002+ task that requires hosted persistence, redesign persistence to a real hosted store or equivalent durable backing service.
 - The implementation has not been reviewed by a fresh Reviewer session.
 
 ## Verdict: CANDIDATE_READY

@@ -23,7 +23,7 @@ before any real data, auth, or hosted persistence exists in this repo.
 steps in SPEC-T-001.md are the acceptance test at this size. CI runs
 install + lint + build only.
 
-**Rollback impact:** trivial — delete the 3 new app files + data file.
+**Rollback impact:** revert the T-001 implementation commit `abcbddd` in full; do not use a manual file-by-file deletion list because the change set includes scaffold, config, CI, app, and data artifacts.
 
 **Dependency order:** n/a, single slice.
 

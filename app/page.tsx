@@ -11,8 +11,12 @@ type HomePageProps = {
 };
 
 export default async function HomePage({ searchParams }: HomePageProps) {
-  const [logEntries, params] = await Promise.all([readDayLog(), searchParams]);
-  const today = formatToday(new Date());
+  const currentDate = new Date();
+  const [allLogEntries, params] = await Promise.all([readDayLog(), searchParams]);
+  const logEntries = allLogEntries.filter((entry) =>
+    isSameCalendarDate(new Date(entry.timestamp), currentDate),
+  );
+  const today = formatToday(currentDate);
   const error = params?.error;
   const errorWorker = params?.worker;
 
@@ -141,4 +145,12 @@ function formatLogTime(timestamp: string) {
     hour: "numeric",
     minute: "2-digit",
   }).format(new Date(timestamp));
+}
+
+function isSameCalendarDate(entryDate: Date, currentDate: Date) {
+  return (
+    entryDate.getFullYear() === currentDate.getFullYear() &&
+    entryDate.getMonth() === currentDate.getMonth() &&
+    entryDate.getDate() === currentDate.getDate()
+  );
 }
