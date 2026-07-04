@@ -60,5 +60,5 @@ minutes, and can produce an end-of-week summary without opening Excel.
   that period. Accepted per confirmed site conditions.
 
 ## Founder acceptance statement
-Decision: PASS / REJECT / NEEDS MORE EVIDENCE
-Founder note:
+Decision: PASS
+Founder note: Confirmed via chat, 2026-07-03.

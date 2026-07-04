@@ -1,0 +1,35 @@
+{
+  "name": "feltlog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Field installation tracker vertical slice.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuswenomagnus-coder/feltlog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuswenomagnus-coder/feltlog/issues"
+  },
+  "homepage": "https://github.com/yuswenomagnus-coder/feltlog#readme",
+  "dependencies": {
+    "next": "^16.2.10",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.10",
+    "typescript": "^6.0.3"
+  }
+}

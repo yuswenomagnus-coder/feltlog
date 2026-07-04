@@ -66,5 +66,5 @@ If T-001 as implemented touches any of the YES-triggering conditions above
 classification is wrong and must be re-run before proceeding.
 
 ## Founder confirmation
-Decision: CONFIRM TIER 2 / ESCALATE TO TIER 3 / NEEDS CHANGES
-Signature: ____________  Date: ____________
+Decision: CONFIRM TIER 2
+Signature: Confirmed via chat, 2026-07-03  Date: 2026-07-03

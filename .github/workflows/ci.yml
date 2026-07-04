@@ -12,6 +12,18 @@ jobs:
       - name: Run structure check
         run: bash scripts/check-structure.sh
 
-  # Product build/test jobs are added at Stage 6 of the first implementation
-  # task, and any change to this workflow after that requires a CI Integrity
-  # Note per Constitution §5 Stage 8 and Hard Stop 11.
+  product:
+    name: Product lint and build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Run lint
+        run: npm run lint
+      - name: Run build
+        run: npm run build
