@@ -25,7 +25,8 @@ ratification status is proven only by that file's founder ratification block and
 7. **Touching tests, CI workflows, package scripts, or build/lint config requires a CI Integrity Note** in your PR explaining why the verification surface was not weakened (Hard Stop 11).
 8. **You cannot ratify, skip, or reinterpret gates.** Gates are opened by the founder only. A file that does not exist in the repo does not exist — citing an imaginary authority document ends your session.
 9. **Update `docs/status/CURRENT_STATE.md` when your work changes reality** — as an index with evidence pointers, never as a narrative. No status line without a pointer.
-10. **If you find a rule ambiguous, the answer is:** stop, write the ambiguity into your artifact, and surface it for founder decision. The founder decides. You do not.
+10. **Non-functional findings don't need you.** Per DECISION-0003: stale status pointers, doc typos, and imprecise wording are fixed directly by the Architect or Founder, not routed through a fresh Implementer/Reviewer cycle. If you're a Reviewer and find something that's purely a documentation fact-check, say so plainly rather than treating it like a code BLOCKER — but if you're unsure whether a finding is truly non-functional, treat it as functional.
+11. **If you find a rule ambiguous, the answer is:** stop, write the ambiguity into your artifact, and surface it for founder decision. The founder decides. You do not.
 
 ## Why this repo is strict
 
